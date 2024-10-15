@@ -1,0 +1,40 @@
+=================================================
+Milestone 3
+
+Nama  : Muhammad Daffa
+Batch : FTDS-007-BSD
+
+Conceptual Problems to provide comprehensive knowledge related with data engineering
+=================================================
+
+1. General overview of NoSQL:
+Answer : NoSQL (Not Only SQL) is a non tabular database, so this is different from relational database. NoSQL store data differently 
+compared with normal relational database. In SQL, the main types in storing the data is in document, key value, wide column,
+and graph. Thus, it will be providing much more flexible schema and faster queries.
+
+2. Jelaskan kapan harus menggunakan NoSQL dan Relational Database Management System!
+Answer: We use NoSQL when we have dynamic schema, scaling without shutting down the system (horizontal scaling), require
+faster query (fast-paced) and handling complex data system. On the other hand, we use relational database when we already
+have a fixed schema and requirements to process strong data consistency.
+
+3. Sebutkan contoh 2 tools/platform NoSQL selain ElasticSearch beserta keunggulan tools/platform tersebut!
+Answer: First popular platform in NoSQL is MongoDB. MongoDB is very popular because the platform is easy to use and can perform
+several queries. The second popular tools/platform is Apache Cassandra. This platform can handle large amount of data 
+from several servers. The strong point of Apache Cassandra is its fault tolerance, it provides strong reliability and 
+uptime when the time of failures.
+
+4. Jelaskan apa yang Anda ketahui dari Airflow menggunakan pemahaman dan bahasa Anda sendiri !
+Answer: Airflow is tools/platform used for managing data pipeline. It can process several integrated defined task in DAG,
+scheduling, and maintain/monitoring the process through its web interface. It is a very powerful tools for performing ETL 
+tasks by Data Engineers.
+
+5. Jelaskan apa yang Anda ketahui dari Great Expectations menggunakan pemahaman dan bahasa Anda sendiri!
+Answer: Great Expectation is a python library that provides several data validations. It is a very powerful tools as it provides
+a more reliable data through some data validations. Data processed in the ETL will then be verified its integrity using this
+tools 
+
+6. Jelaskan apa yang Anda ketahui dari Batch Processing menggunakan pemahaman dan bahasa Anda sendiri (Definisi, Contoh Kasus Penggunaan, Tools, dll)!
+Answer: Methodology to process data as bulk / not real time processing. Data is first stored and collected for some time before
+processing it. Usually it process the data that is not require to be processed real time. Batch processing is a scheduled process
+within a timeframe scheduling (e.g weekly/biweekly/monthly). Example of batch processing is in payroll system, when the company will collect
+information such as work day, overtime etc before finalizing the payroll. Popular tools in batch processing is Apache Spark.

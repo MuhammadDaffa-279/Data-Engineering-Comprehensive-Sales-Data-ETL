@@ -1,0 +1,55 @@
+=================================================
+Milestone 3
+
+Nama  : Muhammad Daffa
+Batch : FTDS-007-BSD
+
+Syntax performed in PostgreSQL to create table that will be processed in ETL task.
+=================================================
+
+CREATE TABLE table_m3 (
+	"Row_ID" SERIAL PRIMARY KEY,
+    "Order_ID" VARCHAR(50),
+    "Order_Date" VARCHAR(50),
+	"Ship_Date" VARCHAR(50),
+	"Ship_Mode" VARCHAR(50),
+    "Customer_ID" VARCHAR(50),
+	"Customer_Name" VARCHAR(50),
+	"Segment" VARCHAR(50),
+	"Country" VARCHAR(50),
+	"City" VARCHAR(50),
+	"State" VARCHAR(50),
+    "Postal_Code" INT,
+	"Region" VARCHAR(50),
+	"Product_ID" VARCHAR(50),
+	"Category" VARCHAR(50),
+	"Sub_Category" VARCHAR(50),
+	"Product_Name" VARCHAR(200),
+	"Sales" FLOAT(50)
+);
+
+COPY table_m3(
+	Row_ID,
+	Order_ID,
+	Order_Date,
+	Ship_Date,
+	Customer_ID,
+	Customer_Name,
+	Segment,
+	Country,
+	City,
+	State,
+	Postal_Code,
+	Region,
+	Product_ID,
+	Category
+	Sub_Category,
+	Product_Name,
+	Sales
+)
+
+FROM '/tmp/superstore_final_dataset.csv';
+DELIMITER ',';
+CSV HEADER;
+
+select * from table_m3;
